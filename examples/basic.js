@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { AuthProvider, Authorize } from "../authorizator";
+import { AuthProvider, Authorize } from "../src/authorizator";
 
 import "./styles.css";
 
