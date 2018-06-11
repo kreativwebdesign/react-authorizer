@@ -4,7 +4,14 @@ import getMissingRoles from "./utils/getMissingRoles";
 const { Consumer, Provider } = React.createContext("authorizator");
 
 export class AuthProvider extends React.Component {
+  checkProps(roles) {
+    if (!Array.isArray(roles)) {
+      throw new Error(`Roles: ${roles} is not an array`);
+    }
+  }
   render() {
+    const roles = this.props.roles || [];
+    this.checkProps(roles);
     return (
       <Provider value={{ roles: this.props.roles }}>
         {this.props.children}
