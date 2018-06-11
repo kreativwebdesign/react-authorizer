@@ -1,17 +1,14 @@
 import React from "react";
 import getMissingRoles from "./utils/getMissingRoles";
+import checkRoleProps from "./utils/checkRoleProps";
 
 const { Consumer, Provider } = React.createContext("authorizator");
 
 export class AuthProvider extends React.Component {
-  checkProps(roles) {
-    if (!Array.isArray(roles)) {
-      throw new Error(`Roles: ${roles} is not an array`);
-    }
-  }
+  checkRoleProps = checkRoleProps("Roles");
   render() {
     const roles = this.props.roles || [];
-    this.checkProps(roles);
+    this.checkRoleProps(roles);
     return (
       <Provider value={{ roles: this.props.roles }}>
         {this.props.children}
@@ -21,11 +18,21 @@ export class AuthProvider extends React.Component {
 }
 
 export class Authorize extends React.Component {
+  checkRoleProps = checkRoleProps("Needed roles");
+  checkChildrenProps(children) {
+    if (typeof children !== "function") {
+      throw new Error(
+        `The children passed to Authorize must be a function, got ${children}`
+      );
+    }
+  }
   render() {
+    const neededRoles = this.props.neededRoles || [];
+    this.checkRoleProps(neededRoles);
+    this.checkChildrenProps(this.props.children);
     return (
       <Consumer>
         {({ roles }) => {
-          const neededRoles = this.props.neededRoles || [];
           const missingRoles = getMissingRoles(neededRoles, roles);
           const isAuthorized = !missingRoles.length;
           const lacksRole = role => missingRoles.indexOf(role) >= 0;
