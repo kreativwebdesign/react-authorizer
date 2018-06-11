@@ -8,10 +8,10 @@ class SomePage extends React.Component {
   render() {
     return (
       <Authorize neededRoles={SomePage.neededRoles}>
-        {({ isAuthorized, missingRoles, hasRole }) => {
+        {({ isAuthorized, missingRoles, lacksRole }) => {
           if (isAuthorized) return "Welcome my friend";
-          else if (hasRole("user")) return "man you're not even an user";
-          else if (hasRole("admin")) return "you should be an admin at least";
+          else if (lacksRole("user")) return "man you're not even an user";
+          else if (lacksRole("admin")) return "you should be an admin at least";
         }}
       </Authorize>
     );

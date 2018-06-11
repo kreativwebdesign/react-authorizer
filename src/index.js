@@ -21,8 +21,8 @@ export class Authorize extends React.Component {
           const neededRoles = this.props.neededRoles || [];
           const missingRoles = getMissingRoles(neededRoles, roles);
           const isAuthorized = !missingRoles.length;
-          const hasRole = role => missingRoles.indexOf(role) >= 0;
-          return this.props.children({ isAuthorized, missingRoles, hasRole });
+          const lacksRole = role => missingRoles.indexOf(role) >= 0;
+          return this.props.children({ isAuthorized, missingRoles, lacksRole });
         }}
       </Consumer>
     );
