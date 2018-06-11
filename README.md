@@ -1,4 +1,4 @@
-# 💂‍♂️react-auth 💂‍♀️
+# 💂‍♂️ react-auth 💂‍♀️
 Basic authorization library for React using the new Context API.
 
 ## WIP
@@ -32,3 +32,15 @@ And then somewhere inside this tree:
 </Authorize>
 ```
 Please reffer to the examples folder too see more :)
+
+
+## API
+
+### AuthProvider
+ - Props:
+   - roles: Array<String>
+ 
+### Authorize
+ - Props:
+   - neededRoles: Array<String>
+   - children: ({ isAuthorized: Boolean, missingRoles: Array<String>, lacksRole: (role: String) => Boolean}) => any
