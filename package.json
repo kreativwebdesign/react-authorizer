@@ -1,7 +1,7 @@
 {
-  "name": "react-authorizor",
+  "name": "react-authorizer",
   "version": "1.0.0",
-  "description": "React Authorizator using the new Context API",
+  "description": "React Authorizer using the new Context API",
   "keywords": [],
   "main": "./index.js",
   "peerDependencies": {
