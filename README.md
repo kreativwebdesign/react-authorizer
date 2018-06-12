@@ -1,4 +1,4 @@
-# 💂‍♂️ react-auth 💂‍♀️
+# 💂‍♂️ react-authorizor 💂‍♀️
 Basic authorization library for React using the new Context API.
 
 ## WIP
