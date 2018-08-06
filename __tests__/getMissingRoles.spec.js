@@ -1,4 +1,4 @@
-import getMissingRoles from "./getMissingRoles";
+import getMissingRoles from "../src/utils/getMissingRoles";
 
 test("getMissingRoles should return the missing roles", () => {
   const roles = ["user"];
