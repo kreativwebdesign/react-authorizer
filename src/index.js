@@ -17,8 +17,6 @@ export class AuthProvider extends React.Component {
   }
 }
 
-export default () => 'hello world'
-
 export class Authorize extends React.Component {
   checkRoleProps = checkRoleProps("Needed roles");
   checkChildrenProps(children) {
