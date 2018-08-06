@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "React Authorizer using the new Context API",
   "keywords": [],
-  "main": "./index.js",
+  "main": "./dist/index.js",
   "peerDependencies": {
-    "react": "16.3.2"
+    "react": "^16.4.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.0.1",
     "babel-loader": "^7.1.4",
@@ -15,7 +16,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "jest": "^23.1.0",
-    "react": "16.3.2",
+    "react": "16.4.2",
     "react-dom": "^16.4.0",
     "react-testing-library": "^3.1.6",
     "regenerator-runtime": "^0.11.1",
@@ -23,7 +24,7 @@
     "webpack-cli": "^3.0.4"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "babel src -d dist --copy-files",
     "test": "jest"
   },
   "license": "MIT"

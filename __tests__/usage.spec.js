@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-testing-library'
-import { AuthProvider, Authorize } from '../src/index';
+import { AuthProvider, Authorize } from '../dist/index';
 
 const roles = ['user', 'admin'];
 
