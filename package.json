@@ -1,6 +1,6 @@
 {
   "name": "react-authorizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Authorizer using the new Context API",
   "keywords": [],
   "main": "./dist/index.js",
