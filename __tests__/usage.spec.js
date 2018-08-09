@@ -22,7 +22,7 @@ test('should render the secured page, if the user has the needed roles', () => {
 })
 
 test('should render the specified fallback if the user lacks some roles', () => {
-  const { getByText, queryByText } = render(
+  const { queryByText } = render(
     <AuthProvider roles={roles}>
       <Authorize neededRoles={['user', 'photographer']}>
         {
