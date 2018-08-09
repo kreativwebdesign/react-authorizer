@@ -28,7 +28,7 @@
   "scripts": {
     "build": "babel src -d dist --copy-files",
     "test": "jest",
-    "lint": "eslint ./**/*.js"
+    "lint": "eslint ."
   },
   "license": "MIT",
   "jest": {
