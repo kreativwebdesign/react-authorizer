@@ -1,13 +1,15 @@
 # 💂‍♂️ react-authorizer 💂‍♀️
-Basic authorization library for React using the new Context API.
+Basic library for handling in your React app.
 
 ## WIP
-This module is no finished yet, things to come:
+This module is not finished yet, so it's not using semantic versioning
+Things to watch out for:
  - Better documentation
  - More examples
 
 ## Usage
-Wrap your React tree inside the AuthProvider Component and pass your users roles as an Array.
+Wrap your React tree inside the AuthProvider Component and pass the roles of the active user as an Array.
+
 ```index.jsx
 <AuthProvider roles={[ 'user', 'admin' ]}>
   {/* your react tree */}
@@ -29,8 +31,6 @@ And then somewhere inside this tree:
   }
 </Authorize>
 ```
-Please reffer to the examples folder too see more :)
-
 
 ## API
 
