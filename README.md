@@ -1,11 +1,14 @@
 # 💂‍♂️ react-authorizer 💂‍♀️
-Basic library for handling in your React app.
+Basic library for handling authorization in your React app.
 
 ## WIP
 This module is not finished yet, so it's not using semantic versioning
 Things to watch out for:
  - Better documentation
  - More examples
+
+ ## Out of Scope
+  - Authentication
 
 ## Usage
 Wrap your React tree inside the AuthProvider Component and pass the roles of the active user as an Array.
