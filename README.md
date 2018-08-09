@@ -42,3 +42,23 @@ And then somewhere inside this tree:
  - Props:
    - neededRoles: Array<String>
    - children: ({ isAuthorized: Boolean, missingRoles: Array<String>, lacksRole: (role: String) => Boolean}) => any
+
+## Development
+
+You must use `yarn` to maintain the project.
+
+### Install
+run `yarn install`
+
+### Test
+run `yarn run test`
+
+### Build
+run `yarn run build`
+
+### Publishing
+> Attention! Use with care.
+
+Make a `build` confirm using the `test` that everything is ok
+and then run
+run `yarn publish`
