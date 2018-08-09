@@ -46,6 +46,10 @@ And then somewhere inside this tree:
    - neededRoles: Array<String>
    - children: ({ isAuthorized: Boolean, missingRoles: Array<String>, lacksRole: (role: String) => Boolean}) => any
 
+## Examples
+
+See some examples in action on codesandbox [here](https://codesandbox.io/s/ol88mvyy75).
+
 ## Development
 
 You must use `yarn` to maintain the project.
@@ -63,5 +67,6 @@ run `yarn run build`
 > Attention! Use with care.
 
 Make a `build` confirm using the `test` that everything is ok
-and then run
+and then
+
 run `yarn publish`
