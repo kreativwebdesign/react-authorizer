@@ -1,0 +1,35 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/jsx-one-expression-per-line": "off",
+    "no-prototype-builtins": "off",
+    "react/destructuring-assignment": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.spec.jsx","*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    },
+    {
+      "files": ["examples/**/*.jsx","examples/**/*.js"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ]
+}
