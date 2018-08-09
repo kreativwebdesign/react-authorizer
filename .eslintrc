@@ -17,5 +17,19 @@
     "react/jsx-one-expression-per-line": "off",
     "no-prototype-builtins": "off",
     "react/destructuring-assignment": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.spec.jsx","*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    },
+    {
+      "files": ["examples/**/*.jsx","examples/**/*.js"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ]
 }
