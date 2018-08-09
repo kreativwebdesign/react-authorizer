@@ -35,6 +35,7 @@
     "testURL": "http://localhost/"
   },
   "dependencies": {
+    "eslint-config-prettier": "^2.9.0",
     "invariant": "^2.2.4",
     "prop-types": "^15.6.2"
   }
