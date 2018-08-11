@@ -38,13 +38,17 @@ And then somewhere inside this tree:
 ## API
 
 ### AuthProvider
- - Props:
-   - roles: Array<String>
+#### Props
+| Name    | type          | required   | default value |
+|---------|---------------|------------|---------------|
+| roles   | Array<String> | Yes        | -             |
 
 ### Authorize
- - Props:
-   - neededRoles: Array<String>
-   - children: ({ isAuthorized: Boolean, missingRoles: Array<String>, lacksRole: (role: String) => Boolean}) => any
+#### Props
+| Name        | type          | required   | default value |
+|-------------|---------------|------------|---------------|
+| neededRoles | Array<String> | Yes        | -             |
+| children    | <pre>function({<br/>  isAuthorized: Boolean,<br/>  missingRoles: Array<String>,<br/>  lacksRole: (role: String) => Boolean,<br/>  hasRole: (role: String) => Boolean<br/>}) => propTypes.node</pre>      | Yes        | -             |
 
 ## Examples
 
