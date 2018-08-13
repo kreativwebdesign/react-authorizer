@@ -1,6 +1,6 @@
 {
   "name": "@kreativwebdesign/react-authorizer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React Authorizer using the new Context API",
   "keywords": [],
   "main": "./dist/index.js",
