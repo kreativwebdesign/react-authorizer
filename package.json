@@ -39,5 +39,8 @@
   "dependencies": {
     "invariant": "^2.2.4",
     "prop-types": "^15.6.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
