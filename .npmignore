@@ -5,3 +5,5 @@ src
 .babelrc
 webpack.config.js
 yarn.lock
+.eslintrc
+.prettierrc.js
