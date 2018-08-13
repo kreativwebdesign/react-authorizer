@@ -32,7 +32,8 @@
     "build": "babel src -d dist --copy-files",
     "test": "jest",
     "lint": "eslint .",
-    "release": "np"
+    "release": "np",
+    "prepublishOnly": "yarn run build"
   },
   "license": "MIT",
   "jest": {
