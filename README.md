@@ -1,4 +1,7 @@
 # 💂‍♂️ react-authorizer 💂‍♀️
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/ba3ed2860da54c6e761d/maintainability)](https://codeclimate.com/github/kreativwebdesign/react-authorizer/maintainability)
+
 Basic library for handling authorization in your React app.
 
 ## WIP
